@@ -77,9 +77,11 @@ h6 {
 
 #header .profile img {
   margin: 15px auto;
-  display: block;
-  width: 120px;
-  border: 8px solid #2c2f3f;
+  width: 200px; /* Set the width */
+  height: 210px; /* Set the height equal to the width */
+  object-fit: cover; /* Ensure the image covers the area */
+  border-radius: 30%; /* Make the image circular */
+  display: block; /* Ensure proper alignment */
 }
 
 #header .profile h1 {
