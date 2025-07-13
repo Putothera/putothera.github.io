@@ -1,0 +1,35 @@
+[
+    {
+      "id": 1,
+      "slug": "jira-workflow-overhaul",
+      "title": "Jira Workflow & Automation Overhaul",
+      "description": "Streamlined engineering workflows by implementing advanced Jira automations and custom scripts.",
+      "longDescription": "This project involved a complete overhaul of the company's engineering development lifecycle within Jira. I designed and implemented custom workflows, developed complex automation rules to handle ticket transitions, and wrote scripts to integrate with Bitbucket for automated status updates based on pull requests and merges. The result was a 40% reduction in manual ticket handling and a significant improvement in process visibility for stakeholders.",
+      "imageUrl": "https://placehold.co/800x600/172b4d/ffffff.png?text=Jira+Workflow",
+      "projectUrl": "https://github.com/your-username/project-1",
+      "tags": ["Jira", "Automation", "Scripting"],
+      "technologies": ["Jira Cloud", "Groovy", "Atlassian Forge", "REST APIs", "Bitbucket"]
+    },
+    {
+      "id": 2,
+      "slug": "integration-hub-salesforce-jira",
+      "title": "Integration Hub: Salesforce & Jira",
+      "description": "Built a middleware service to create a seamless, bi-directional sync between Salesforce and Jira.",
+      "longDescription": "The sales and engineering teams were disconnected, leading to data silos. I architected and developed an integration hub using a serverless architecture on AWS. This service listens for webhooks from both Salesforce (for new high-priority cases) and Jira (for development status updates) and syncs the data in real-time. This provided a unified view of customer issues, dramatically improving response times.",
+      "imageUrl": "https://placehold.co/800x600/172b4d/ffffff.png?text=Integration+Hub",
+      "projectUrl": "https://github.com/your-username/project-2",
+      "tags": ["Integration", "API", "Salesforce"],
+      "technologies": ["AWS Lambda", "Node.js", "Salesforce API", "Jira API", "Serverless Framework"]
+    },
+    {
+      "id": 3,
+      "slug": "internal-reporting-dashboard",
+      "title": "Internal Reporting Dashboard",
+      "description": "Developed a custom web application to provide real-time analytics on team performance.",
+      "longDescription": "To replace manual spreadsheet reporting, I built a full-stack internal application using React and Node.js. The dashboard pulls data from the Jira API to visualize key metrics like sprint velocity, cycle time, and bug resolution rates. It features role-based access control and provides data exports, giving leadership clear insights into team productivity.",
+      "imageUrl": "https://placehold.co/800x600/172b4d/ffffff.png?text=Internal+Dashboard",
+      "projectUrl": "https://github.com/your-username/my-portfolio",
+      "tags": ["React", "Internal Tools", "Full-Stack"],
+      "technologies": ["React", "TypeScript", "Node.js", "Express", "Chart.js", "Jira API"]
+    }
+  ]
