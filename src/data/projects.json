@@ -1,35 +1,53 @@
 [
-    {
-      "id": 1,
-      "slug": "jira-workflow-overhaul",
-      "title": "Jira Workflow & Automation Overhaul",
-      "description": "Streamlined engineering workflows by implementing advanced Jira automations and custom scripts.",
-      "longDescription": "This project involved a complete overhaul of the company's engineering development lifecycle within Jira. I designed and implemented custom workflows, developed complex automation rules to handle ticket transitions, and wrote scripts to integrate with Bitbucket for automated status updates based on pull requests and merges. The result was a 40% reduction in manual ticket handling and a significant improvement in process visibility for stakeholders.",
-      "imageUrl": "https://placehold.co/800x600/172b4d/ffffff.png?text=Jira+Workflow",
-      "projectUrl": "https://github.com/your-username/project-1",
-      "tags": ["Jira", "Automation", "Scripting"],
-      "technologies": ["Jira Cloud", "Groovy", "Atlassian Forge", "REST APIs", "Bitbucket"]
-    },
-    {
-      "id": 2,
-      "slug": "integration-hub-salesforce-jira",
-      "title": "Integration Hub: Salesforce & Jira",
-      "description": "Built a middleware service to create a seamless, bi-directional sync between Salesforce and Jira.",
-      "longDescription": "The sales and engineering teams were disconnected, leading to data silos. I architected and developed an integration hub using a serverless architecture on AWS. This service listens for webhooks from both Salesforce (for new high-priority cases) and Jira (for development status updates) and syncs the data in real-time. This provided a unified view of customer issues, dramatically improving response times.",
-      "imageUrl": "https://placehold.co/800x600/172b4d/ffffff.png?text=Integration+Hub",
-      "projectUrl": "https://github.com/your-username/project-2",
-      "tags": ["Integration", "API", "Salesforce"],
-      "technologies": ["AWS Lambda", "Node.js", "Salesforce API", "Jira API", "Serverless Framework"]
-    },
-    {
-      "id": 3,
-      "slug": "internal-reporting-dashboard",
-      "title": "Internal Reporting Dashboard",
-      "description": "Developed a custom web application to provide real-time analytics on team performance.",
-      "longDescription": "To replace manual spreadsheet reporting, I built a full-stack internal application using React and Node.js. The dashboard pulls data from the Jira API to visualize key metrics like sprint velocity, cycle time, and bug resolution rates. It features role-based access control and provides data exports, giving leadership clear insights into team productivity.",
-      "imageUrl": "https://placehold.co/800x600/172b4d/ffffff.png?text=Internal+Dashboard",
-      "projectUrl": "https://github.com/your-username/my-portfolio",
-      "tags": ["React", "Internal Tools", "Full-Stack"],
-      "technologies": ["React", "TypeScript", "Node.js", "Express", "Chart.js", "Jira API"]
-    }
-  ]
+  {
+    "id": 1,
+    "slug": "intelligent-onboarding-automation",
+    "title": "Intelligent Employee Onboarding & Offboarding",
+    "description": "A fully automated system for user lifecycle management, covering everything from access provisioning to compliance audits.",
+    "longDescription": "At Kredivo Group, I engineered a zero-touch system to manage the entire employee lifecycle. By integrating multiple platforms, this solution automates access provisioning to necessary tools based on role, manages permissions, and conducts compliance audits during offboarding. This project eliminated manual errors, reduced onboarding time by over 80%, and significantly enhanced security posture by ensuring access rights were always in sync with employee status.",
+    "imageUrl": "https://placehold.co/800x600/1e293b/93c5fd.png?text=Onboarding+Automation",
+    "projectUrl": "#",
+    "tags": ["Automation", "Security", "HRIS"],
+    "technologies": [
+      "Jira",
+      "n8n",
+      "PostgreSQL",
+      "REST APIs",
+      "Access Management"
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "custom-ai-agent-n8n",
+    "title": "Custom AI Agent for Internal Support",
+    "description": "Developed an AI agent from scratch using n8n and custom prompts to streamline internal processes and information retrieval.",
+    "longDescription": "To reduce the burden on internal support teams and provide instant answers to common queries, I designed and built a custom AI agent. Leveraging the n8n workflow automation platform and carefully crafted prompts, the agent integrates with our internal knowledge bases and systems. It can answer policy questions, check ticket statuses, and guide users through common processes, leading to faster resolutions and allowing the IT team to focus on high-impact tasks.",
+    "imageUrl": "https://placehold.co/800x600/1e293b/93c5fd.png?text=AI+Agent",
+    "projectUrl": "#",
+    "tags": ["AI", "n8n", "Internal Tools"],
+    "technologies": [
+      "n8n",
+      "Large Language Models",
+      "API Integration",
+      "Prompt Engineering"
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "asset-management-system-qr",
+    "title": "Asset Management System (FBAMS)",
+    "description": "A full-stack asset management application with QR code integration and mobile support, built to manage IT assets across 10 locations.",
+    "longDescription": "While at PT FARIKA BETON, I identified a critical need for a centralized IT asset tracking system. I spearheaded the development of the Farika Beton Asset Management System (FBAMS) from the ground up using Laravel and MySQL. The system features a QR code for each asset, allowing for quick scans and updates via a mobile-friendly web app. This project provided the first-ever real-time view of our entire IT inventory, dramatically improving asset allocation, maintenance schedules, and loss prevention.",
+    "imageUrl": "https://placehold.co/800x600/1e293b/93c5fd.png?text=Asset+Management",
+    "projectUrl": "#",
+    "tags": ["Full-Stack", "Laravel", "Internal Tools"],
+    "technologies": [
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "QR Codes",
+      "Bootstrap",
+      "Docker"
+    ]
+  }
+]

@@ -1,22 +1,53 @@
 [
   {
-    "date": "2020",
-    "title": "Started Journey in Automation",
-    "description": "Began focusing on automating internal processes, scripting, and diving deep into the Atlassian suite to improve team workflows."
+    "id": 1,
+    "slug": "intelligent-onboarding-automation",
+    "title": "Intelligent Employee Onboarding & Offboarding",
+    "description": "A fully automated system for user lifecycle management, covering everything from access provisioning to compliance audits.",
+    "longDescription": "At Kredivo Group, I engineered a zero-touch system to manage the entire employee lifecycle. By integrating multiple platforms, this solution automates access provisioning to necessary tools based on role, manages permissions, and conducts compliance audits during offboarding. This project eliminated manual errors, reduced onboarding time by over 80%, and significantly enhanced security posture by ensuring access rights were always in sync with employee status.",
+    "imageUrl": "https://placehold.co/800x600/1e293b/93c5fd.png?text=Onboarding+Automation",
+    "projectUrl": "#",
+    "tags": ["Automation", "Security", "HRIS"],
+    "technologies": [
+      "Jira",
+      "n8n",
+      "PostgreSQL",
+      "REST APIs",
+      "Access Management"
+    ]
   },
   {
-    "date": "2021",
-    "title": "First Major Integration Project",
-    "description": "Architected and built a key integration between Salesforce and Jira, eliminating data silos and improving cross-team communication."
+    "id": 2,
+    "slug": "custom-ai-agent-n8n",
+    "title": "Custom AI Agent for Internal Support",
+    "description": "Developed an AI agent from scratch using n8n and custom prompts to streamline internal processes and information retrieval.",
+    "longDescription": "To reduce the burden on internal support teams and provide instant answers to common queries, I designed and built a custom AI agent. Leveraging the n8n workflow automation platform and carefully crafted prompts, the agent integrates with our internal knowledge bases and systems. It can answer policy questions, check ticket statuses, and guide users through common processes, leading to faster resolutions and allowing the IT team to focus on high-impact tasks.",
+    "imageUrl": "https://placehold.co/800x600/1e293b/93c5fd.png?text=AI+Agent",
+    "projectUrl": "#",
+    "tags": ["AI", "n8n", "Internal Tools"],
+    "technologies": [
+      "n8n",
+      "Large Language Models",
+      "API Integration",
+      "Prompt Engineering"
+    ]
   },
   {
-    "date": "2022",
-    "title": "Led Internal Tools Initiative",
-    "description": "Developed a full-stack internal dashboard to provide real-time analytics, giving leadership unprecedented insight into team performance."
-  },
-  {
-    "date": "2023 - Present",
-    "title": "Architect of Digital Ecosystems",
-    "description": "Expanded my focus to designing, building, and automating critical software infrastructure and internal platforms for modern teams."
+    "id": 3,
+    "slug": "asset-management-system-qr",
+    "title": "Asset Management System (FBAMS)",
+    "description": "A full-stack asset management application with QR code integration and mobile support, built to manage IT assets across 10 locations.",
+    "longDescription": "While at PT FARIKA BETON, I identified a critical need for a centralized IT asset tracking system. I spearheaded the development of the Farika Beton Asset Management System (FBAMS) from the ground up using Laravel and MySQL. The system features a QR code for each asset, allowing for quick scans and updates via a mobile-friendly web app. This project provided the first-ever real-time view of our entire IT inventory, dramatically improving asset allocation, maintenance schedules, and loss prevention.",
+    "imageUrl": "https://placehold.co/800x600/1e293b/93c5fd.png?text=Asset+Management",
+    "projectUrl": "#",
+    "tags": ["Full-Stack", "Laravel", "Internal Tools"],
+    "technologies": [
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "QR Codes",
+      "Bootstrap",
+      "Docker"
+    ]
   }
 ]

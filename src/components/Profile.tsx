@@ -1,10 +1,8 @@
-// src/components/Profile.tsx
-
 "use client";
 import { motion } from "framer-motion";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
-import { ArrowRight, MessageSquareCode } from "lucide-react";
+import { ArrowRight, Rss } from "lucide-react";
 import Link from "next/link";
 
 export const Profile = () => {
@@ -19,10 +17,9 @@ export const Profile = () => {
           autoPlay
           loop
           muted
-          playsInline // Important for iOS devices
+          playsInline
           className="w-full h-full object-cover"
         >
-          {/* Reference your local video file here */}
           <source src="/videos/hero-background.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -42,16 +39,16 @@ export const Profile = () => {
           variant="outline"
           className="py-1 px-3 border-primary/50 text-primary bg-background/20 backdrop-blur-sm"
         >
-          <MessageSquareCode className="size-3 mr-2 animate-pulse" />
-          Everything APIs
+          <Rss className="size-3 mr-2 animate-pulse" />
+          Driving Efficiency Through Automation
         </Badge>
         <h1 className="text-4xl font-bold tracking-tight sm:text-6xl mt-6 text-white">
-          Architect of Digital Ecosystems
+          IT Specialist Application & Platform
         </h1>
         <p className="mt-6 text-lg max-w-3xl mx-auto leading-8 text-slate-300">
-          I design, build, and automate the critical software infrastructure
-          that powers modern teams. From seamless API integrations to robust
-          internal platforms, I create systems that just *work*.
+          I build, integrate, and automate the core systems that drive business
+          efficiency. From custom Jira workflows to AI-powered agents, I deliver
+          solutions that enhance performance and accelerate growth.
         </p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <Button asChild size="lg">

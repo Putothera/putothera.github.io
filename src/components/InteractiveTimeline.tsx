@@ -3,9 +3,37 @@
 import React from "react";
 import { motion, Variants } from "framer-motion";
 import { Card, CardHeader, CardTitle, CardDescription } from "./ui/card";
-import timelineData from "@/data/timeline.json";
 import { Zap } from "lucide-react";
 import { cn } from "@/lib/utils";
+
+// --- FIX: Hardcode the data directly into the component ---
+// This bypasses any file import or caching issues.
+const timelineData = [
+  {
+    date: "2022 - 2023",
+    title: "IT Support & Systems Development at PT FARIKA BETON",
+    description:
+      "Built a foundation in IT infrastructure, managing servers, networks, and assets. Spearheaded the development of internal systems like an asset management app with QR integration and a digital ID card system using Laravel and PHP.",
+  },
+  {
+    date: "Dec 2023 - Apr 2024",
+    title: "Information Technology Support Officer at JULO",
+    description:
+      "Provided foundational IT support across multiple divisions, ensuring smooth operational workflows for both on-site and remote teams throughout the SEA region. Mastered troubleshooting and user assistance.",
+  },
+  {
+    date: "Apr 2024 - May 2025",
+    title: "Promotion: IT Corporate Apps & Support at JULO",
+    description:
+      "Promoted to a development-focused role to enhance operational efficiency by building and integrating internal applications. Played a key role in ISO 27001/27701 audits and achieved the highest performance rating (6.5/7) in Engineering.",
+  },
+  {
+    date: "May 2025 - Present",
+    title: "IT Specialist, Application & Platform at Kredivo Group",
+    description:
+      "Specializing in advanced automation and platform integration. Key achievements include creating complex Jira automations, fully automating employee onboarding, and developing an AI Agent from scratch using n8n.",
+  },
+];
 
 const containerVariants: Variants = {
   hidden: {},
@@ -40,9 +68,7 @@ export const InteractiveTimeline = () => {
           </p>
         </div>
 
-        {/* --- Main Timeline Container --- */}
         <div className="relative">
-          {/* The Vertical Line */}
           <div
             className="absolute top-0 w-0.5 h-full bg-border left-4 md:left-1/2 md:-translate-x-1/2"
             aria-hidden="true"
@@ -61,21 +87,17 @@ export const InteractiveTimeline = () => {
                 className="relative"
                 variants={itemVariants}
               >
-                {/* The Icon on the line */}
                 <div className="absolute top-1/2 -translate-y-1/2 bg-primary p-2 rounded-full z-10 border-4 border-background left-4 -translate-x-1/2 md:left-1/2">
                   <Zap className="text-primary-foreground size-5" />
                 </div>
 
-                {/* The Card - Positioned conditionally */}
                 <div
                   className={cn(
                     "w-full md:w-1/2",
-                    // On desktop, odd items are on the right, even on the left
                     index % 2 === 0 ? "md:ml-auto md:pl-12" : "md:pr-12"
                   )}
                 >
                   <Card className="shadow-lg">
-                    {/* On desktop, text aligns away from the center line */}
                     <CardHeader
                       className={cn(
                         "text-left",

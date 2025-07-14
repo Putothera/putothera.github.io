@@ -20,23 +20,25 @@ export const AboutMe = () => {
           </div>
           <div className="md:col-span-2">
             <h2 className="text-3xl font-bold mb-4">
-              Driven by Efficiency and a Passion for Problem-Solving
+              From IT Support to Automation Architect
             </h2>
             <p className="text-muted-foreground mb-4">
-              Hello! I'm an IT specialist with a deep-seated passion for
-              untangling complex digital knots. My journey into the world of
-              platform integration and automation began with a simple belief:
-              technology should empower teams, not hinder them. I thrive on
-              diving into a company's ecosystem, identifying bottlenecks, and
-              building the robust, automated workflows that allow people to
-              focus on what they do best.
+              My journey in technology began with a foundational role in IT
+              support, where I learned the critical importance of smooth,
+              reliable systems. This experience ignited my passion for not just
+              fixing problems, but engineering them out of existence. I quickly
+              moved beyond support tickets and into the world of development and
+              automation, driven by a simple belief: technology should be a
+              force multiplier for every team.
             </p>
             <p className="text-muted-foreground mb-6">
-              Whether it's configuring a sophisticated Jira environment from the
-              ground up, scripting a custom integration between two critical
-              business platforms, or developing an internal tool to surface key
-              data, my goal is always the same: to create systems that are not
-              only powerful but also intuitive and reliable.
+              Today, I specialize in architecting the digital workplace. Whether
+              it's designing intricate Jira workflows, developing custom
+              internal apps, or building AI agents from scratch with tools like
+              n8n, my focus is always on creating elegant, scalable, and
+              automated solutions. I thrive on collaborating with diverse teams,
+              understanding their unique challenges, and delivering the exact
+              tools they need to achieve operational excellence.
             </p>
             <Button asChild>
               <Link href="#contact">Get In Touch</Link>
