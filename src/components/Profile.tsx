@@ -4,7 +4,7 @@
 import { motion } from "framer-motion";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
-import { ArrowRight, Rss } from "lucide-react";
+import { ArrowRight, MessageSquareCode } from "lucide-react";
 import Link from "next/link";
 
 export const Profile = () => {
@@ -42,8 +42,8 @@ export const Profile = () => {
           variant="outline"
           className="py-1 px-3 border-primary/50 text-primary bg-background/20 backdrop-blur-sm"
         >
-          <Rss className="size-3 mr-2 animate-pulse" />
-          Open to new projects & collaborations
+          <MessageSquareCode className="size-3 mr-2 animate-pulse" />
+          Everything APIs
         </Badge>
         <h1 className="text-4xl font-bold tracking-tight sm:text-6xl mt-6 text-white">
           Architect of Digital Ecosystems
