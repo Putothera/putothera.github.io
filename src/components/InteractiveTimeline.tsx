@@ -1,12 +1,13 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion"; // Import Variants
 import { Card, CardHeader, CardTitle, CardDescription } from "./ui/card";
 import timelineData from "@/data/timeline.json";
 import { Zap } from "lucide-react";
 
-const containerVariants = {
+// Explicitly type the variants with the Variants type
+const containerVariants: Variants = {
   hidden: {},
   visible: {
     transition: {
@@ -15,14 +16,15 @@ const containerVariants = {
   },
 };
 
-const itemVariants = {
+// Explicitly type the variants with the Variants type
+const itemVariants: Variants = {
   hidden: { opacity: 0, y: 50 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
       duration: 0.6,
-      ease: "easeOut",
+      ease: "easeOut", // Corrected: No quotes around easeOut
     },
   },
 };
