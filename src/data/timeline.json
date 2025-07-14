@@ -1,0 +1,22 @@
+[
+  {
+    "date": "2020",
+    "title": "Started Journey in Automation",
+    "description": "Began focusing on automating internal processes, scripting, and diving deep into the Atlassian suite to improve team workflows."
+  },
+  {
+    "date": "2021",
+    "title": "First Major Integration Project",
+    "description": "Architected and built a key integration between Salesforce and Jira, eliminating data silos and improving cross-team communication."
+  },
+  {
+    "date": "2022",
+    "title": "Led Internal Tools Initiative",
+    "description": "Developed a full-stack internal dashboard to provide real-time analytics, giving leadership unprecedented insight into team performance."
+  },
+  {
+    "date": "2023 - Present",
+    "title": "Architect of Digital Ecosystems",
+    "description": "Expanded my focus to designing, building, and automating critical software infrastructure and internal platforms for modern teams."
+  }
+]

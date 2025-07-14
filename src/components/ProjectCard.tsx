@@ -3,7 +3,6 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight } from "lucide-react";
 import { Project } from "@/lib/types";
@@ -14,18 +13,9 @@ interface ProjectCardProps {
 }
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+  // Replaced motion.div with a regular div to remove animation.
   return (
-    // We are removing the style prop and initial prop,
-    // relying on the parent (ScrollAnimationWrapper or PageTransition)
-    // to handle the entry state.
-    <motion.div
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 0.5 }}
-      // The initial state is now defined by its starting render state
-      className="opacity-0"
-      style={{ y: 20 }}
-    >
+    <div>
       <Link href={`/projects/${project.slug}`} className="group block h-full">
         <Card className="flex flex-col h-full overflow-hidden transition-all duration-300 border-2 border-transparent group-hover:border-primary group-hover:shadow-lg">
           <CardHeader>
@@ -59,6 +49,6 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           </CardFooter>
         </Card>
       </Link>
-    </motion.div>
+    </div>
   );
 };
