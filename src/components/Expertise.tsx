@@ -7,14 +7,16 @@ import {
   CardContent,
 } from "./ui/card";
 import { motion, Variants } from "framer-motion";
-import { Zap, Puzzle, Cog, Code } from "lucide-react";
+// --- (1) IMPORT THE NEW ICON ---
+import { Zap, Puzzle, ShieldCheck, Code } from "lucide-react";
 
+// --- (2) REPLACE THE ATLASSIAN CARD WITH THE SECURITY CARD ---
 const expertiseData = [
   {
-    icon: <Cog className="w-8 h-8 text-primary" />,
-    title: "Atlassian Suite Management",
+    icon: <ShieldCheck className="w-8 h-8 text-primary" />,
+    title: "Security & Compliance",
     description:
-      "Expert configuration, administration, and optimization of Jira, Confluence, and Bitbucket to fit your team's unique needs.",
+      "Integrating security best practices into every solution and contributing to successful ISO 27001/27701 compliance audits.",
   },
   {
     icon: <Puzzle className="w-8 h-8 text-primary" />,
@@ -23,16 +25,16 @@ const expertiseData = [
       "Connecting disparate systems like Salesforce, Slack, and internal tools with robust, custom-built API integrations.",
   },
   {
-    icon: <Code className="w-8 h-8 text-primary" />,
-    title: "Internal Tool Development",
-    description:
-      "Building custom applications and scripts that provide teams with the exact functionality they need to succeed.",
-  },
-  {
     icon: <Zap className="w-8 h-8 text-primary" />,
     title: "Workflow Automation",
     description:
       "Designing and implementing intelligent automations that eliminate manual tasks, reduce errors, and accelerate processes.",
+  },
+  {
+    icon: <Code className="w-8 h-8 text-primary" />,
+    title: "Internal Tool Development",
+    description:
+      "Building custom applications and scripts that provide teams with the exact functionality they need to succeed.",
   },
 ];
 
@@ -79,7 +81,6 @@ export const Expertise = () => {
           {expertiseData.map((item) => (
             <motion.div key={item.title} variants={itemVariants}>
               <Card className="h-full">
-                {/* --- THIS IS THE FIX --- */}
                 <CardHeader className="flex flex-col items-center text-center">
                   <div className="mx-auto bg-primary/10 p-3 rounded-full w-fit">
                     {item.icon}

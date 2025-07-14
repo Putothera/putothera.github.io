@@ -1,16 +1,16 @@
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import './globals.css';
-import { ThemeProvider } from '@/components/ThemeProvider';
-import { Header } from '@/components/Header';
-import { Footer } from '@/components/Footer';
-import { PageTransition } from '@/components/PageTransition';
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import { ThemeProvider } from "@/components/ThemeProvider";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+import { PageTransition } from "@/components/PageTransition";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: '[Your Name] | Web Developer',
-  description: 'The portfolio of a passionate web developer.',
+  title: "PUTRA A | Integration Specialist",
+  description: "Putra A Portfolio.",
 };
 
 export default function RootLayout({

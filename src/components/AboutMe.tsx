@@ -34,11 +34,11 @@ export const AboutMe = () => {
             <p className="text-muted-foreground mb-6">
               Today, I specialize in architecting the digital workplace. Whether
               it's designing intricate Jira workflows, developing custom
-              internal apps, or building AI agents from scratch with tools like
-              n8n, my focus is always on creating elegant, scalable, and
-              automated solutions. I thrive on collaborating with diverse teams,
-              understanding their unique challenges, and delivering the exact
-              tools they need to achieve operational excellence.
+              internal apps, or building AI agents, my focus is always on
+              creating elegant, scalable, and automated solutions. I thrive on
+              collaborating with diverse teams to deliver tools that are not
+              only powerful but also secure and compliant with rigorous
+              standards like ISO 27001/27701.
             </p>
             <Button asChild>
               <Link href="#contact">Get In Touch</Link>
