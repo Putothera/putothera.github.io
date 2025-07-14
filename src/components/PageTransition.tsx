@@ -1,23 +1,11 @@
 "use client";
 
-import React from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { usePathname } from 'next/navigation';
+import React from "react";
 
+/**
+ * All animation logic has been removed for debugging.
+ * This component now renders its children directly without any transitions.
+ */
 export const PageTransition = ({ children }: { children: React.ReactNode }) => {
-  const pathname = usePathname();
-
-  return (
-    <AnimatePresence mode="wait">
-      <motion.div
-        key={pathname}
-        initial={{ y: 20 }}
-        animate={{ y: 0 }}
-        exit={{ y: -20 }}
-        transition={{ duration: 0.3, ease: 'easeInOut' }}
-      >
-        {children}
-      </motion.div>
-    </AnimatePresence>
-  );
+  return <>{children}</>;
 };
