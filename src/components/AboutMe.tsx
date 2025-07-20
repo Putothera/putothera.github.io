@@ -1,32 +1,40 @@
 "use client";
-import Image from "next/image";
 import { Button } from "./ui/button";
 import Link from "next/link";
-import Parallax from "./react-bits/Parallax";
 import Orb from "./react-bits/Orb";
 import ScrollReveal from "./react-bits/ScrollReveal";
-import ScrollFloat from "./react-bits/ScrollFloat"; // Import the ScrollFloat component
+import ScrollFloat from "./react-bits/ScrollFloat";
+import ProfileCard from "./react-bits/ProfileCard";
 
 export const AboutMe = () => {
+  const handleContact = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section id="about-me" className="relative py-24">
       <Orb className="absolute inset-0 z-0" />
       
       <div className="container mx-auto relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
-          <div className="md:col-span-1">
-            <Parallax speed={-1}>
-              <Image
-                src="https://placehold.co/400x400/1e293b/93c5fd.png?text=Me"
-                alt="A photo of the site author"
-                width={400}
-                height={400}
-                className="rounded-lg shadow-md aspect-square object-cover"
-              />
-            </Parallax>
+          
+          <div className="md:col-span-1 flex justify-center">
+            <ProfileCard
+              name="PUTRA A"
+              title="IT Specialist"
+              handle="putra"
+              status="Available for Work"
+              contactText="Get In Touch"
+              avatarUrl="https://placehold.co/400x400/1e293b/93c5fd.png?text=Me"
+              onContactClick={handleContact}
+              enableTilt={false}
+            />
           </div>
+
           <div className="md:col-span-2">
-            {/* Replace the h2 tag with the ScrollFloat component */}
             <ScrollFloat containerClassName="mb-4">
               From IT Support to Automation Architect
             </ScrollFloat>
