@@ -5,10 +5,12 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { PageTransition } from "@/components/PageTransition";
+import DarkVeil from "@/components/react-bits/DarkVeil";
+import ClickSpark from "@/components/react-bits/ClickSpark";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "PUTRA A | Integration Specialist",
   description: "Putra A Portfolio.",
 };
@@ -27,13 +29,20 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="flex flex-col min-h-screen">
-            <Header />
-            <main className="flex-grow">
-              <PageTransition>{children}</PageTransition>
-            </main>
-            <Footer />
+          <div className="fixed top-0 left-0 w-full h-screen -z-10">
+            <DarkVeil />
           </div>
+          
+          <ClickSpark>
+            <div className="relative z-10 flex flex-col min-h-screen">
+              <Header />
+              <main className="flex-grow">
+                <PageTransition>{children}</PageTransition>
+              </main>
+              <Footer />
+            </div>
+          </ClickSpark>
+
         </ThemeProvider>
       </body>
     </html>

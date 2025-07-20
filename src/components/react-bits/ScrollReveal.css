@@ -1,0 +1,7 @@
+.scroll-reveal-text {
+  will-change: transform;
+}
+
+.scroll-reveal .word {
+  display: inline-block;
+}

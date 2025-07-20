@@ -5,9 +5,9 @@ import { motion, Variants } from "framer-motion";
 import { Card, CardHeader, CardTitle, CardDescription } from "./ui/card";
 import { Zap } from "lucide-react";
 import { cn } from "@/lib/utils";
+import ScrollFloat from "./react-bits/ScrollFloat"; // Import the component
 
-// --- FIX: Hardcode the data directly into the component ---
-// This bypasses any file import or caching issues.
+
 const timelineData = [
   {
     date: "2022 - 2023",
@@ -61,7 +61,9 @@ export const InteractiveTimeline = () => {
     <section id="journey" className="py-24">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold">My Professional Journey</h2>
+          <ScrollFloat containerClassName="text-3xl font-bold">
+            My Professional Journey
+          </ScrollFloat>          
           <p className="text-muted-foreground max-w-2xl mx-auto mt-2">
             A look at the key milestones that have shaped my skills and
             experience.
