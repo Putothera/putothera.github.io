@@ -8,14 +8,14 @@ import { Expertise } from "@/components/Expertise";
 import { InteractiveTimeline } from "@/components/InteractiveTimeline";
 import AnimatedContent from '@/components/react-bits/AnimatedContent';
 import ScrollFloat from '@/components/react-bits/ScrollFloat';
-import { Header } from "@/components/Header"; // Import the Header here
+import { Header } from "@/components/Header";
+import Magnetic from "@/components/react-bits/Magnetic"; // Import the Magnetic component
 
 export default function Home() {
   const projects: Project[] = projectsData;
 
   return (
-    // Use a React Fragment to group the components
-    <> 
+    <>
       <Header />
       <main>
         <Profile />
@@ -46,7 +46,7 @@ export default function Home() {
                   distance={50} 
                   delay={index * 0.1}
                 >
-                  <ProjectCard project={project} />
+                    <ProjectCard project={project} />
                 </AnimatedContent>
               ))}
             </div>

@@ -9,7 +9,7 @@ interface MagneticProps {
   className?: string;
 }
 
-const Magnetic: React.FC<MagneticProps> = ({ children, strength = 0.4, className = "" }) => {
+const Magnetic: React.FC<MagneticProps> = ({ children, strength = 0.05, className = "" }) => {
   const magneticRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {

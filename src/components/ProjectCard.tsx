@@ -7,15 +7,16 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowRight } from "lucide-react";
 import { Project } from "@/lib/types";
 import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
+import Magnetic from "./react-bits/Magnetic"; // Import the Magnetic component here
 
 interface ProjectCardProps {
   project: Project;
 }
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
-  // Replaced motion.div with a regular div to remove animation.
   return (
-    <div>
+    // The Magnetic wrapper is now inside the client component
+    <Magnetic magnetStrength={10}>
       <Link href={`/projects/${project.slug}`} className="group block h-full">
         <Card className="flex flex-col h-full overflow-hidden transition-all duration-300 border-2 border-transparent group-hover:border-primary group-hover:shadow-lg">
           <CardHeader>
@@ -49,6 +50,6 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           </CardFooter>
         </Card>
       </Link>
-    </div>
+    </Magnetic>
   );
 };

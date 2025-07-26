@@ -2,17 +2,28 @@
 
 import React from "react";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
+import { useActiveSection } from "@/hooks/useActiveSection";
 
+// Added "Journey" to the navigation links
+const navLinks = [
+  { href: "#projects", label: "Projects" },
+  { href: "#about-me", label: "About" },
+  { href: "#journey", label: "Journey" },
+  { href: "#contact", label: "Contact" },
+];
 
 export const Header = () => {
+  // The hook will now also track the "journey" section
+  const activeSection = useActiveSection(navLinks.map(link => link.href.substring(1)));
+
   return (
-    // Add z-50 to ensure it's on top of other content
-    <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-transparent backdrop-blur-sm">
+    <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-background">
       <div className="container flex h-16 items-center">
         <div className="mr-auto">
-          {/* Replace the text name with a stylized logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="
+            <div
+              className="
               flex items-center justify-center 
               w-8 h-8 
               bg-white text-black 
@@ -27,23 +38,19 @@ export const Header = () => {
           </Link>
         </div>
         <nav className="flex items-center space-x-6 text-sm font-medium">
-          <Link
-            href="/#projects"
-            className="transition-colors hover:text-primary"
-          >
-            Projects
-          </Link>
-          <Link href="/#about-me" className="transition-colors hover:text-primary">
-            About
-          </Link>
-          <Link
-            href="/#contact"
-            className="transition-colors hover:text-primary"
-          >
-            Contact
-          </Link>
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={cn(
+                "transition-colors hover:text-primary",
+                activeSection === link.href.substring(1) ? "text-primary" : "text-foreground"
+              )}
+            >
+              {link.label}
+            </Link>
+          ))}
         </nav>
-        {/* The theme switcher button is now removed */}
       </div>
     </header>
   );

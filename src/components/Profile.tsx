@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 import { ArrowRight, Rss } from "lucide-react";
 import Link from "next/link";
 import RotatingText from "./react-bits/RotatingText"; // Import the new component
-import GradientText from './react-bits/GradientText'; 
+import GradientText from './react-bits/GradientText';
 import SplitText from "./react-bits/SplitText";
 
 export const Profile = () => {
@@ -13,6 +13,20 @@ export const Profile = () => {
       id="about"
       className="relative overflow-hidden h-screen flex items-center justify-center"
     >
+
+      <div className="absolute top-0 left-0 w-full h-full -z-20">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover"
+        >
+          <source src="/videos/hero-background.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
       <div className="absolute top-0 left-0 w-full h-full bg-black/50 -z-10"></div>
 
       {/* --- Content --- */}
